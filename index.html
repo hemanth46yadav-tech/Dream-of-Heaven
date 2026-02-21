@@ -3,8 +3,8 @@
 <head>
 <title>Dream of Heaven | Royal Gold Edition</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
-<style>
 
+<style>
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
@@ -46,6 +46,7 @@ animation:shimmer 3s linear infinite;
 to{opacity:0;visibility:hidden;}
 }
 
+/* Sparkle Animation */
 .sparkle{
 position:fixed;
 color:gold;
@@ -147,9 +148,9 @@ color:gold;
 text-decoration:none;
 font-weight:600;
 }
-
 </style>
 </head>
+
 <body>
 
 <div id="entryScreen">
@@ -202,8 +203,8 @@ font-weight:600;
 <div class="section">
 <h2>Menu & Add-ons</h2>
 <div class="side">
-<img src="images/menu.png">
-<img src="images/addons.png">
+<img src="menu.png">
+<img src="addons.png">
 </div>
 </div>
 
@@ -218,6 +219,7 @@ let img=document.getElementById(id);
 img.style.display=img.style.display==="block"?"none":"block";
 }
 
+// Golden sparkle particles
 setInterval(()=>{
 let s=document.createElement("div");
 s.className="sparkle";
